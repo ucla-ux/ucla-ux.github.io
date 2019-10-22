@@ -1,4 +1,6 @@
-root {
+@charset "UTF-8";
+
+:root {
   --ucla-gold: #ffd100;
   --ucla-blue: #2774ae;
   --ucla-lightest-blue: #daebfe;
@@ -99,7 +101,6 @@ root {
 
 html {
   border-top: 25px solid var(--ucla-blue);
-  box-sizing: border-box;
 }
 
 *,
@@ -115,6 +116,9 @@ body {
   line-height: var(--ucla-line-height-text);
   margin: var(--ucla-spacing-x-large);
   max-width: var(--ucla-max-width);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
    
 
@@ -173,6 +177,11 @@ figure {
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
    
 small {
   font-size: var(--ucla-font-size-x-small);
@@ -181,5 +190,22 @@ small {
 code,
 pre {
   font-family: var(--ucla-font-family-mono);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
