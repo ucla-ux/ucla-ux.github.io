@@ -1,7 +1,4 @@
 root {
-  /* Add UCLA name space to all CSS properties
-   UCLA Brand Colors
-  // ========================================== */
   --ucla-gold: #ffd100;
   --ucla-blue: #2774ae;
   --ucla-lightest-blue: #daebfe;
@@ -27,13 +24,13 @@ root {
   --ucla-black-20: #ccc;
   --ucla-black-10: #e6e6e6;
   --ucla-white: #fff;
-  /* Typography
-  // ========================================== */
+  
+  
   --ucla-font-family: Helvetica, Arial, sans-serif;
   --ucla-font-family-display: --ucla-font-family;
   --ucla-font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   --ucla-font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
-  /* Font Weights */
+  
   --ucla-font-weight-thin: 200;
   --ucla-font-weight-light: 300;
   --ucla-font-weight: 400;
@@ -42,6 +39,7 @@ root {
   --ucla-font-weight-bold: 700;
   --ucla-font-weight-xbold: 800;
   --ucla-font-weight-black: 900;
+  
   /* Type scale */
   --ucla-text-scale-ratio: 1.125;
   /* major second */
@@ -61,22 +59,18 @@ root {
   --ucla-font-size-x-small: 0.79rem;
 
   
-  /* Line height */
   --ucla-line-height-text: 1.5;
   --ucla-line-height-display: 1.125;
   --ucla-line-height-alt: 1.25;
   --ucla-line-height: 1;
   
-  /* Border radii
- // ========================================== */
   --ucla-border-radius-x-small: .25rem;
   --ucla-border-radius-small: .5rem;
   --ucla-border-radius-medium: .75rem;
   --ucla-border-radius-large: 1rem;
   --ucla-border-radius-circle: 50%;
   
-  /* Border widths
-// ========================================== */
+
   --ucla-border-width-hairline: 1px;
   --ucla-border-width-thin: 2px;
   --ucla-border-width-thick: 4px;
@@ -87,8 +81,6 @@ root {
     var(--ucla-border-width-thick) solid
     var(--ucla-gold);
     
-  /* Spacing
-// ========================================== */
   --ucla-max-width: 90rem;
   --ucla-min-width: 60rem;
   --ucla-spacing-x-small: .25rem;
@@ -100,8 +92,6 @@ root {
   --ucla-spacing-x-large: 2rem;
   --ucla-spacing-xx-large: 3rem;
   
-  /* Breakpoints relative to 16px base font
-// ========================================== */
   --ucla-bp-x-small: 18.75em;
   --ucla-bp-small: 30em;
   --ucla-bp-medium: 48em;
@@ -110,34 +100,9 @@ root {
   --ucla-bp-xx-large: 87.5rem;
 }
 
-/* Add ucla- name space to all CSS properties to avoid clashes
+/* Add ucla- name space to all CSS class names */
 
-// ========================================== */
-/* Typography
-// ========================================== */
 
-p {
-  line-height: var(--ucla-line-height-text);
-}
-
-hr {
-  color: var(--ucla-black-10);
-}
-
-ul,
-ol {
-  line-height: var(--ucla-line-height-text);
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-/* =====================================================
-   Print
-   =====================================================
-*/
 html {
   border-top: 25px solid var(--ucla-blue);
   box-sizing: border-box;
@@ -157,28 +122,8 @@ body {
   margin: var(--ucla-spacing-x-large);
   max-width: var(--ucla-max-width);
 }
+   
 
-
-/* =====================================================
-   Text-level semantics
-   w3c.github.io/html/textlevel-semantics.html
-   ===================================================== */
-small {
-  font-size: var(--ucla-font-size-x-small);
-}
-
-code,
-pre {
-  font-family: var(--ucla-font-family-mono);
-}
-
-
-
-
-/* =====================================================
-   Heading content semantics
-   w3c.github.io/html/dom.html#heading-content
-   ===================================================== */
 h1,
 h2,
 h3,
@@ -222,3 +167,31 @@ h6,
   font-size: var(--ucla-font-size-small);
   line-height: var(--ucla-line-height-text);
 }
+
+p {
+  line-height: var(--ucla-line-height-text);
+}
+
+hr {
+  color: var(--ucla-black-10);
+}
+
+ul,
+ol {
+  line-height: var(--ucla-line-height-text);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+   
+   small {
+  font-size: var(--ucla-font-size-x-small);
+}
+
+code,
+pre {
+  font-family: var(--ucla-font-family-mono);
+}
+
