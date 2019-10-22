@@ -98,11 +98,6 @@
   --ucla-bp-xx-large: 87.5rem;
 }
 
-
-html {
-  border-top: 25px solid var(--ucla-blue);
-}
-
 *,
 *::before,
 *::after {
