@@ -40,9 +40,9 @@ root {
   --ucla-font-weight-xbold: 800;
   --ucla-font-weight-black: 900;
   
-  /* Type scale */
+  /* Type scale  major second */
   --ucla-text-scale-ratio: 1.125;
-  /* major second */
+
   --ucla-font-size-xxxx-display: 4.624rem;
   --ucla-font-size-xxx-display: 4.11rem;
   --ucla-font-size-xx-display: 3.653rem;
@@ -74,12 +74,8 @@ root {
   --ucla-border-width-hairline: 1px;
   --ucla-border-width-thin: 2px;
   --ucla-border-width-thick: 4px;
-  --ucla-border:
-    var(--ucla-border-width-hairline) solid
-    var(--ucla-blue);
-  --ucla-border-thick-gold:
-    var(--ucla-border-width-thick) solid
-    var(--ucla-gold);
+  --ucla-border: var(--ucla-border-width-hairline) solid var(--ucla-blue);
+  --ucla-border-thick-gold: var(--ucla-border-width-thick) solid var(--ucla-gold);
     
   --ucla-max-width: 90rem;
   --ucla-min-width: 60rem;
@@ -99,8 +95,6 @@ root {
   --ucla-bp-x-large: 75em;
   --ucla-bp-xx-large: 87.5rem;
 }
-
-/* Add ucla- name space to all CSS class names */
 
 
 html {
@@ -133,37 +127,31 @@ h6 {
   font-weight: var(--ucla-font-weight-bold);
 }
 
-h1,
-.h1 {
+h1 {
   font-size: var(--ucla-font-size-display);
   line-height: var(--ucla-line-height);
 }
 
-h2,
-.h2 {
+h2 {
   font-size: var(--ucla-font-size-x-large);
   line-height: var(--ucla-line-height-display);
 }
 
-h3,
-.h3 {
+h3 {
   font-size: var(--ucla-font-size-large);
   line-height: var(--ucla-line-height-display);
 }
 
-h4,
-.h4 {
+h4 {
   font-size: var(--ucla-font-size-medium);
 }
 
-h5,
-.h5 {
+h5 {
   font-size: var(--ucla-font-size);
   line-height: var(--ucla-line-height-text);
 }
 
-h6,
-.h6 {
+h6 {
   font-size: var(--ucla-font-size-small);
   line-height: var(--ucla-line-height-text);
 }
@@ -186,7 +174,7 @@ figure {
   padding: 0;
 }
    
-   small {
+small {
   font-size: var(--ucla-font-size-x-small);
 }
 
